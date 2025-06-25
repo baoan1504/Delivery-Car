@@ -9,8 +9,15 @@ public class Collsion : MonoBehaviour
         Debug.Log("touching");
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("you pass the circle!");
+        if (other.tag == "Package")
+        {
+            Debug.Log("oh gói hàng");
+        }
+        if (other.tag == "Location")
+        {
+            Debug.Log("I receive package");
+        }
     }
 }
