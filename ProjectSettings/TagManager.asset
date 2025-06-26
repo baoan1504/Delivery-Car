@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Package
   - Location
+  - Boost
   layers:
   - Default
   - TransparentFX
